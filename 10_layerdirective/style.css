@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+/* this class will be present just after components layer */
+.componentsafter{
+    text-align: center
+}
+@tailwind utilities;
+/* It will be present just after utilities layer */
+@layer utilities{
+    .btn{
+        @apply text-black bg-slate-300 rounded-md px-2 py-1 text-sm
+    }
+}
